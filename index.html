@@ -1,0 +1,189 @@
+<!--
+    DESIGNED BY DANTIN KAKKAR
+    http://hire.dantinkakkar.me
+-->
+<html>
+    <head>
+        <title>Vajra! 2015</title>
+        <link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="print.css" type="text/css" media="print"> 
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+        <!--[if lt IE 7]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <script type="text/javascript">
+            function returnArticleHeadings()
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function(){
+                    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                        var x = document.getElementById("updatez").innerHTML;
+                        document.getElementById("updatez").innerHTML=x+xmlhttp.responseText; 
+                    }
+                }
+                xmlhttp.open("GET", "articles.php?q=head");
+                xmlhttp.send();
+                returnFirstArticle();
+            }
+            function returnFirstArticle()
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function(){
+                    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                        document.getElementById("demarticlez").innerHTML=xmlhttp.responseText; 
+                    }
+                }
+                xmlhttp.open("GET", "articles.php?q=first");
+                xmlhttp.send();
+            }
+            function showArticle(x)
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    {
+                        document.getElementById("demarticlez").innerHTML=xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET","articles.php?q="+x.id);
+                xmlhttp.send();
+            }
+        </script>
+        <link rel="stylesheet" href="index_style.css" /> 
+    </head>
+    <body onLoad="returnArticleHeadings()"><div class="container">
+        <div class="blimp">
+            Chief Guests<br><br><b>Unmukt Chand</b><br /><b>Sanjay Bhardwaj</b><br /><br />
+            <span style="font-size:13px">Click <a href="#tre">here</a> to know more about this!</span>
+        </div>
+        <section class="page" id="uno">
+            <nav>
+                <li class="srmlogo">&nbsp;&nbsp;<img src="srmlogo.png" />&nbsp;&nbsp;SRM UNIVERSITY</li>
+                <li class="active">home</li>&nbsp;/&nbsp;
+                <li><a href="events.html">events</a></li>&nbsp;/&nbsp;
+                <li><a href="gallery.html">gallery</a></li>&nbsp;/&nbsp;
+                <li><a href="registration.html">register</a></li>&nbsp;&nbsp;
+            </nav>
+            <div id="caric">
+                VAJRA '15<br />
+                <span class="info">
+                    SRM University's Sports Fest (5th - 7th October, 2015)
+                </span><br />
+                <a href="registration.html"><div class="button" type="submit" id="gotoreg">
+                    Register
+                    </div></a>                
+                    <a href="events.html"><div class="button" type="submit">View Events
+                        </div></a>
+            </div>
+           
+        </section>
+        <section class="page" id="tre">
+            <div class="sponsors">
+                
+            </div>
+            <div class="width:100%" style="height:50px"></div>
+            <div class="updatefeed colborder" id="updatez">
+                <h1>Updates from the team</h1>
+                
+            </div>
+            <div class="article" id="demarticlez">
+                
+            </div>
+        </section>
+        <section class="page" id="dos">
+            <div class="col3">
+                <div class="column colborder">
+                    <h2><a href="accomodation.html">Accomodation</a></h2>
+                    <img src="trans.jpg" /><br />
+                    Accomodation will be available at SRM Campus during Vajra 2015, and regular buses will run from Vaishali metro station
+                    to the campus as well. College participants will be expected to be on the best of their behaviour during the duration of
+                    Vajra 2015 while they stay at SRM quarters. The participants will be provided with good and hygienic accomodation and
+                    food for this time period. Click on the blue link labelled "Accomodation" to view more info about accomodation, conveyance,
+                    and how to get to SRM University.
+                </div>
+                <div class="column colborder">
+                    <h2><a href="oc.html">The Organizing Committee</a></h2>
+                    <img src="oc.png" /><br />
+                    Behind this fest are a dedicated team of faculty members supported by student co-ordinators, divided into various
+                    committees. Click on the link above to view the names of each member, sorted according to committee. Please feel
+                    free to contact any student co-ordinator as per your convenience for any assistance you might require for registrations
+                    or clarifications regarding the events and competitions.
+                </div>
+                <div class="column">
+                    <h2><a href="sponsors.html">Sponsors</a></h2>
+                    <img src="bisleri.png" /><br />
+                    Vajra is proud to be sponsored by some of the most pioneering companies in their respective fields, such as eBay, 
+                    Gatorade, and Bisleri. Our media partners are the Deccan Herald and TET. We are grateful to our sponsors for their 
+                    support and commitment to this fest. We guarantee good representation for our sponsors for the entire duration of the
+                    event.
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span style="float:left;position:relative;left:20px;">
+                5th to 7th October, 2015&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                Prizes worth <b>1 lakh</b> to be won!</span>
+            Mail us at: <a href="mailto:srmvajra15@gmail.com">srmvajra15@gmail.com</a> or call +91-9968251794 (Sannidhya Awasthi)
+        </footer>
+            <div id="arrow"><a class="smoothScroll" href="#tre" id="downa"><img id="arr" src="arrowwhite1.png" /></a><!--
+                &nbsp;&nbsp;&nbsp;
+                <a class="smoothScroll" href="#uno" id="upa"><img id="arr1" src="arrowwhite1.png" /></a>--></div>
+        </div>        
+        <script type="text/javascript">
+            var target = $("section#dos").offset().top,
+            timeout = null,time2=null,time3=null;
+            
+            var target2 = $("section#uno").offset().top;
+            var target3 = $("section#tre").offset().top;
+            $(window).scroll(function () {
+                if (!time2) 
+                {
+                    time2 = setTimeout(function () {
+                        console.log('scroll');            
+                        clearTimeout(time2);
+                        time2 = null;
+                        if ($(window).scrollTop() >= target2) {
+                                $("#arr").css("transform","rotate(360deg)");                            
+                                $("#downa").attr("href","#tre");
+                        }
+                    }, 250);
+                }
+            });
+            $(window).scroll(function () {
+                if (!time3) 
+                {
+                    time3 = setTimeout(function () {
+                        console.log('scroll');            
+                        clearTimeout(time3);
+                        time3 = null;
+                        if ($(window).scrollTop() >= target3) {
+                                $("#arr").css("transform","rotate(360deg)");
+                                $("#downa").attr("href","#dos");
+                        }
+                    }, 250);
+                }
+            });
+            $(window).scroll(function () {
+                if (!timeout) 
+                {
+                    timeout = setTimeout(function () {
+                        console.log('scroll');            
+                        clearTimeout(timeout);
+                        timeout = null;
+                        if ($(window).scrollTop() >= target) {
+                                $("#arr").css("transform","rotate(180deg)");
+                                $("#downa").attr("href","#uno");
+                        }
+                    }, 250);
+                }
+            });
+        </script>
+    </body>
+</html>

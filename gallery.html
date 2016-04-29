@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            Gallery - Vajra! 2015
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="print.css" type="text/css" media="print"> 
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="querymyberry.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <link rel="stylesheet" href="index_style.css" />
+        <link rel="stylesheet" href="gallerystyle.css" />        
+    </head>
+    <body id="exists">
+        <div class="lightbox" id="lb" onclick="defaf()">
+            <div class="forbears">
+                Click anywhere on this image to close it.
+            </div>
+        </div>
+        <div class="container" id="ok">
+             <nav>
+                <li class="srmlogo">&nbsp;&nbsp;<img src="srmlogo.png" />&nbsp;&nbsp;SRM UNIVERSITY</li>
+                <li><a href="index.html">home</a></li>&nbsp;/&nbsp;
+                <li><a href="events.html">events</a></li>&nbsp;/&nbsp;
+                <li class="active">gallery</li>&nbsp;/&nbsp;
+                <li><a href="registration.html">register</a></li>
+            </nav>
+            <div class="span-24" style="width:100%;height:0px"></div>  
+            <div class="gallery" id="b-pappu">
+                
+            </div>
+            <script type="text/javascript">
+                var xg = new XMLHttpRequest();
+                xg.onreadystatechange = function() {
+                    if(xg.readyState == 4 && xg.status == 200)
+                    {
+                        d = document.getElementById("b-pappu");
+                        s = xg.responseXML.documentElement.getElementsByTagName("img");
+                        for(i=0;i<s.length;i++)
+                        {
+                            d.innerHTML = d.innerHTML + "<a href='#ok'><img class='gl' onclick='enfaf(\"" + s[i].firstChild.nodeValue + ".jpg\")' src='"+s[i].firstChild.nodeValue+".jpg' /></a><div class='vers'></div>";
+                            if((i-3)%4==0)
+                            {
+                                d.innerHTML = d.innerHTML + "";
+                            }
+                        }
+                    }
+                }
+                xg.open("GET","imglist.xml",true);
+                xg.send();
+                
+                function enfaf(x)
+                {
+                    $("#lb").css("background-image","url(" + x + ")");
+                    $("#lb").css("background-size","cover");
+                    //$("#lb").css("background-image","url(" + x + ")");
+                    $("#lb").show();
+                }
+                        
+                function defaf()
+                {
+                    $("#lb").hide();
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

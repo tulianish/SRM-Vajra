@@ -1,0 +1,71 @@
+body
+{
+    background-color: #fff;
+}
+nav
+{
+    background-color: dodgerblue;
+}
+nav li
+{
+    text-shadow: none;
+    font-weight: 500;
+}
+.categories
+{
+    display: inline-block;
+    width: 400px;
+    min-height: 100px;
+    padding: 50px;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+    text-align: right;
+    font-size: 1.3em;
+    list-style-type: none;
+    background-color: aliceblue;
+}
+.triangleofsatan
+{
+    height: 0;
+    width: 0;
+    display: inline-block;
+    border-bottom: solid 5px transparent;
+    border-top: solid 5px transparent;
+    border-left: solid 5px black;
+}
+article
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+.ttt
+{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+}
+h2
+{
+    font-family: Oswald,sans-serif;
+}
+.ttt li
+{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+.carousel
+{
+    width: 100%;
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+.carousel img
+{
+    display: inline-block;
+    height: 300px;
+    width: 335px;
+}

@@ -1,0 +1,106 @@
+body
+{
+    background-color: dodgerblue;
+    padding: 0;
+    margin: 0;
+}
+nav
+{
+    background-color: dodgerblue;
+}
+nav li
+{
+    text-shadow: none;
+    font-weight: 400;
+}
+div#acmd
+{
+    max-width: 49%;
+    box-sizing: border-box;
+    padding: 70px;
+    padding-top: 100px;
+    padding-left: 50px;
+    float: left;
+    display: inline-block;
+    background-color: dodgerblue;
+    color: ghostwhite;
+    font-family: Oswald,sans-serif;
+    text-align: right;
+}
+div#acmd2
+{
+    max-width: 50%;
+    box-sizing: border-box;
+    float: right;
+    padding: 70px;
+    padding-top: 100px;
+    padding-right: 50px;
+    color: #fff;
+    background-color: ghostwhite;
+    font-family: Oswald,sans-serif;
+    text-align: left;
+}
+div#acmd p
+{
+    box-sizing: border-box;
+    margin-top: -7px;
+    font-size: 15px;
+    font-family: 'Titillium Web';
+}
+div#acmd2 p
+{
+    box-sizing: border-box;
+    margin-top: -7px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Titillium Web';
+}
+div#acmd2 p
+{
+    box-sizing: border-box;
+    margin-top: -7px;
+    font-size: 15px;
+    font-family: 'Titillium Web';
+}
+h3
+{
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Oswald;
+}
+div#acmd2 h3
+{
+    color: black;
+}
+div#acmd h2
+{
+    font-family: 'Oswald', sans-serif;
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 40px;
+}
+div#acmd2 h2
+{
+    font-family: 'Oswald', sans-serif;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 40px;
+}
+div#acmd img
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin-left: 15px;
+    border: solid 7px ghostwhite;
+    float: right;
+}
+div#acmd2 img
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin-right: 15px;
+    border: solid 7px dodgerblue;
+    float: left;
+}

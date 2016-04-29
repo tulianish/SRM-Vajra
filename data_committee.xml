@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<details>
+    <committee type="nso">
+    <person>
+        <name>Mr.Vinod Upadhyaya</name>
+        <contact>Mr.VS Gupta</contact>
+    </person>
+    <person>
+        <name>Mr.Rajesh Vashishta</name>
+        <contact>Mr.VS Gupta</contact>
+    </person>
+    <person>
+        <name>Mr.Amrit Kumar</name>
+        <contact>Mr.VS Gupta</contact>
+    </person>
+    <person>
+        <name>Mr.Ajay Kumar</name>
+    </person>
+    </committee>
+    <committee type="registration">
+    <person>
+        <name>Dr.R.P. Mahapatra</name>
+        <contact>Mr.VS Gupta</contact>
+    </person>
+    <person>
+        <name>Mr. Jaswinder Singh</name>
+        <contact>Mr.VS Gupta</contact>
+    </person>
+    <person>
+        <name>Mr. Bal Krishna Saraswat</name>
+        <contact>Mr.VS Gupta</contact>
+    </person>
+    </committee>
+    <committee type="discipline">
+        <person>
+            <name>Dr.Naveen Ahlawat</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        <person>
+            <name>Dr.Shekhar Teotia</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        <person>
+            <name>Dr.Sandeep</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        <person>
+            <name>Dr.Vipin</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        <person>
+            <name>Dr.Rahul Solanki</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        <person>
+            <name>Dr.Arun Kumar</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        
+    </committee>
+    <committee type="ocer">
+        <person>
+            <name>Dr.Madan Kumar</name>
+            <contact>Mr.VS Gupta</contact>
+        </person>
+        <person>
+            <name>Ms.Konika</name>
+            <contact>VS Gupta</contact>
+        </person>
+        <person>
+            <name>Ms.Dhomya</name>
+            <contact>VS Gupta</contact>
+        </person>
+
+    </committee>
+    <committee type="closer">
+        <person>
+            <name>Dr.Prerna Sharma</name>
+            <contact>VS Gupta</contact>
+        </person>
+        <person>
+            <name>Ms.Pallavi Jain</name>
+            <contact>VS Gupta</contact>
+        </person>
+        <person>
+            <name>Dr.Garima Pandey</name>
+            <contact>VS Gupta</contact>
+        </person>
+
+    </committee>
+</details>

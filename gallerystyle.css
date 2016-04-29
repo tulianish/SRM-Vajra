@@ -1,0 +1,64 @@
+body
+{
+    background-image: url('bgreg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav li
+{
+    font-weight: 300;
+}
+img.gl
+{
+    display: inline-block;
+    border: solid 4px white;
+    box-shadow: #000 0 0 3px 1px;
+    height: 175px;
+    width: 200px;
+    position: relative;
+    z-index: 1001;
+}
+img.gl:hover
+{
+    opacity: .7;
+}
+.container
+{
+    position: relative;
+    z-index: 1000;
+}
+.vers
+{
+    height: 300px;
+    display: inline-block;
+    width: 30px;
+}
+.forbears
+{
+    position: absolute;
+    height: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    width: 100%;
+    line-height: 70px;
+}
+#lb
+{
+    position: relative;
+    z-index: 1009;
+    top: 10%;
+    left: 20%;
+    border: solid 7.5px rgba(255,255,255,0.9);
+    height: 80%;
+    box-shadow: none;
+    width: 60%;
+    box-shadow: #000 0 0 3px 1px;
+    background: white;
+    position: absolute;
+    display: none;
+}

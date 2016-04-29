@@ -1,0 +1,119 @@
+
+html, body{
+ font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  background: #FFf;
+}
+body a {
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+font-family: 'Lobster', cursive;
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+
+
+.about {
+    padding:12em 0 4em 0;
+}
+h3.tittle{
+font-size: 3em;
+    font-weight: 400;
+    color: #2ad2c9;
+}
+.about-top {
+    margin-top: 1em;
+}
+.about-top-right h4 {
+    color: #020202;
+    font-size: 1.6em;
+    line-height: 1.5em;
+	padding:0 0 10px 0;
+}
+.about-top-right {
+    padding: 0;
+}
+.about-top-right p {
+    font-size: 0.9em;
+    line-height: 1.9em;
+    color: #555;
+}
+#trianglePath5 {
+    fill:#fff;
+    stroke:#fff;
+}
+#trianglePath6 {
+    fill:#F2F2F2;
+    stroke:#F2F2F2;
+}
+.about.second {
+    padding: 4em 0 4em 0;
+}
+
+.breed-section {
+    padding:10em 0 4em 0;
+	background-color:#6CF3EB;
+}
+svg:not(:root) {
+  overflow: hidden;
+    position: absolute;
+}
+#trianglePath1 {
+  fill:#6CF3EB;
+  stroke:#6CF3EB;
+}
+#trianglePath2 {
+  fill:#43D4CC;
+  stroke:#43D4CC;
+}
+.serve-text p {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.9em;
+}
+.serve-text h4 {
+    padding: 0 0 20px 0;
+	    color: #020202;
+    font-size: 1.6em;
+}
+.service-grid ul{
+	margin: 1em 0 0 10px;
+}
+.service-grid li{
+    display: block;
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+.service-grid li a i{
+    font-size: 0.9em;
+    margin: 0.2em 0.5em 1em 0em;
+    color:#020202;
+    line-height: 1.8em;
+    text-decoration: none;
+    padding-left: 0em;
+}
+h3.tittle.two {
+    color: #020202;
+}
+.service-img {
+    padding-left: 0;
+}
+.serve-grids {
+    margin-top: 2em;
+}

@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>
+            Registration - Vajra! 2015
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="print.css" type="text/css" media="print"> 
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="querymyberry.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <link rel="stylesheet" href="index_style.css" />
+        <link rel="stylesheet" href="registration.css" />
+    </head>
+    <body>
+        <div class="not-container">
+            <nav>
+                <li class="srmlogo">&nbsp;&nbsp;<img src="srmlogo.png" />&nbsp;&nbsp;SRM UNIVERSITY</li>
+                <li><a href="index.html">home</a></li>&nbsp;/&nbsp;
+                <li><a href="events.html">events</a></li>&nbsp;/&nbsp;
+                <li><a href="gallery.html">gallery</a></li>&nbsp;/&nbsp;
+                <li class="active">register</li>
+            </nav>
+            <div class="span-24" id="form">
+                    <h1>Register as a team or an Individual?</h1><br />
+                    <button class="thechoice" id="uni">
+                        <img src="university.png" />
+                    </button>
+                    <div class="spacer"></div>
+                    <button class="thechoice" id="ind">
+                        <img src="individual.png" />
+                    </button>
+            </div>
+            <form action="http://vajra-kakkar.rhcloud.com/mail.php" method="post" name="registrations">
+                <input type="hidden" name="typereg" id="typeregister" value="notselected"/>
+                <input type="hidden" id="dateid" name="date" value="" />
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                       $("#dateid").attr("value",new Date().toJSON().slice(0,10));
+                    });
+                </script>
+            <div id="universitat" class="form">
+                    <h2>
+                        Register as a team&nbsp;<div id="icon"></div>
+                    </h2>
+                    <table id="formtabz">
+                    <tr><td>
+                        <label class="was">Representative Name</label><br />
+                        <input name="nameu" type="text" placeholder="Enter your full name" id="namecr"  required/></td>
+                        <td><label class="was">College Name</label><br />
+                        <input name="collegeu" type="text" placeholder="eg. Kirori Mal College" id="collegename" required/></td>
+                        <td><label class="was">University (if applicable)</label><br />
+                        <input type="text" name="univu" placeholder="eg. Delhi University" id="univifpresent" required/></td>
+                    </tr>
+                    <tr><td><label class="was">Contact Number</label><br />
+                        <input name="phoneu" type="text" placeholder="Provide STD code, eg. 011 12345678" id="contactno" required/></td>
+                        <td><label class="was">E-Mail Address</label><br />
+                        <input name="mailu" type="email" placeholder="something@example.com" id="email" required/></td>
+                        <td><label class="was">Pin Code</label><br />
+                        <input name="pinu" type="text" placeholder="Enter your full Pin Code" id="pincode" required/></td>
+                    </tr>
+                    <tr><td>
+                        <label class="was">Address Line 1</label><br />
+                        <input name="a1u" type="text" placeholder="Address, line 1" id="add1"  required/></td>
+                        <td><label class="was">Address Line 2</label><br />
+                        <input name="a2u" type="text" placeholder="Address, line 2 (if any)" id="add2" required/> </td>
+                        <td><label class="was">City and State</label><br />
+                        <input name="cityu" type="text" placeholder="eg. New Delhi, Delhi" id="citystate" required /></td>
+                        </tr>
+                </table>
+                <table id="esporta">
+                    <caption>Please remember to check all the events your college delegation is participating in:</caption>
+                    <tr>
+                        <td>
+                            <input name="bbm" type="checkbox"> Basketball, Men
+                        </td>
+                        <td>
+                            <input name="bbwm" type="checkbox"> Basketball, Women
+                        </td>
+                        <td>
+                            <input name="football" type="checkbox"> Football (Men only)
+                        </td>
+                        <td>
+                            <input name="cricket" type="checkbox"> Cricket, (Men only)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="ttmu" type="checkbox"> Table Tennis, Men
+                        </td>
+                        <td>
+                            <input name="ttwmu" type="checkbox"> Table Tennis, Women
+                        </td>
+                        <td>
+                            <input name="chessmu" type="checkbox"> Chess, Men
+                        </td>
+                        <td>
+                            <input name="chesswmu" type="checkbox"> Chess, Women
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="carrommu" type="checkbox"> Carrom, Men
+                        </td>
+                        <td>
+                            <input name="carromwmu" type="checkbox"> Carrom, Women
+                        </td>
+                        <td>
+                            <input name="vballm" type="checkbox"> Volleyball, Men
+                        </td>
+                        <td>
+                            <input name="vballwm" type="checkbox"> Volleyball, Women
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="usainmu" type="checkbox"> 100m, Men
+                        </td>
+                        <td>
+                            <input name="usainwmu" type="checkbox"> 100m, Women
+                        </td>
+                        <td>
+                            <input name="ljumpmu" type="checkbox"> Long Jump, Men
+                        </td>
+                        <td>
+                            <input name="ljumpwmu" type="checkbox"> Long Jump, Women
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="shotputu" type="checkbox"> Shot Put
+                        </td>
+                        <td>
+                            <input name="badmu" type="checkbox"> Badminton (Men)
+                        </td>
+                        <td>
+                            <input name="badwmu" type="checkbox"> Badminton (Women)
+                        </td>
+                    </tr>
+                    <div class="acc"><input name="acu" type="checkbox"> Please check this box if you will be requiring accomodation!</div>
+                </table><br /><br />
+                <button class="button-ish" type="submit" style="border: none">
+                    Submit  
+                </button>
+                <div style="left:-50px" id="reset-form" class="button-ish">
+                    Reset  
+                </div>
+            </div>
+            <div id="individual" class="form">
+                 <h2>
+                        Register as an individual&nbsp;<div id="icon"></div>
+                    </h2>
+                    <table id="formtabz">
+                    <tr><td>
+                        <label class="was">Representative Name</label><br />
+                        <input type="text" name="name" placeholder="Enter your full name" id="namecr"  required/></td>
+                        <td><label class="was">College Name</label><br />
+                        <input type="text" name="college" placeholder="eg. Kirori Mal College" id="collegename" required /></td>
+                        <td><label class="was">University (if applicable)</label><br />
+                        <input name="university" type="text" placeholder="eg. Delhi University" id="univifpresent"  required/></td>
+                    </tr>
+                    <tr><td><label class="was">Contact Number</label><br />
+                        <input name="phone" type="text" placeholder="Provide STD code, eg. 011 12345678" id="contactno" required /></td>
+                        <td><label class="was">E-Mail Address</label><br />
+                        <input type="email" name="mail" placeholder="something@example.com" id="email" required /></td>
+                        <td><label class="was">Pin Code</label><br />
+                        <input name="pincode" type="text" placeholder="Enter your full Pin Code" id="pincode"  required/></td>
+                    </tr>
+                    <tr><td>
+                        <label class="was">Address Line 1</label><br />
+                        <input name="a1" type="text" placeholder="Address, line 1" id="add1"  required/></td>
+                        <td><label class="was">Address Line 2</label><br />
+                        <input name="a2" type="text" placeholder="Address, line 2 (if any)" id="add2" required/></td>
+                        <td><label class="was">City and State</label><br />
+                        <input name="city" type="text" placeholder="eg. New Delhi, Delhi" id="citystate" required/></td>
+                        </tr>
+                </table>
+                <table id="esporta">
+                    <caption>Please remember to check all the events your college delegation is participating in:</caption>
+                    <tr>                       
+                        <td>
+                            <input name="usainm" type="checkbox"> 100m, Men
+                        </td>
+                        <td>
+                            <input name="usainwm" type="checkbox"> 100m, Women
+                        </td>
+                        <td>
+                            <input name="ljumpm" type="checkbox"> Long Jump, Men
+                        </td>
+                        <td>
+                            <input name="ljumpwm" type="checkbox"> Long Jump, Women
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="shotput" type="checkbox"> Shot Put
+                        </td></tr>
+                            <div class="acc"><input name="ac" type="checkbox"> Please check this box if you will be requiring accomodation!</div>
+                </table><br /><br />
+                <button class="button-ish" type="submit" style="border: none">
+                    Submit  
+                </button>
+                <div style="left:-50px" id="reset-form2" class="button-ish">
+                    Reset  
+                </div>
+            </div>
+            </form>
+            <footer style="background: dodgerblue">
+            Contact us at: <a style="color:#fff;text-decoration:underline" href="mailto:srmvajra15@gmail.com">srmvajra15@gmail.com</a>
+            </footer>
+        </div>
+    </body>
+</html>

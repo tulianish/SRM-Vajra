@@ -1,0 +1,158 @@
+nav
+{
+    background-color: dodgerblue;
+}
+nav li
+{
+    text-shadow: none;
+    font-weight: 500;
+}
+.carousel
+{
+    width: 100%;
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+.carousel img
+{
+    display: inline-block;
+    height: 272.72px;
+    width: 304.5px;
+}
+body
+{
+    background-color: #fff;
+}
+.abc
+{
+    height: 70px;
+    text-align: center;
+    display: inline;
+    box-sizing: border-box;
+    background-color: dodgerblue;
+    color: #fff;
+    position: absolute;
+    top: 400px;
+    font-size: 20px;
+    min-width: 100%;
+    font-family: Roboto;
+    font-weight: 500;
+    list-style-type: none;
+    height: auto;
+    left: 0px;
+}
+div.button
+{    
+    letter-spacing: normal;
+    transition-property: all;
+    transition-duration: .3s;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-shadow: none;
+    font-family: Arial, sans-serif;
+    line-height: 50px;
+    top: 150px;
+    width: 150px;
+    border: solid 3px dodgerblue;
+    background-color: ghostwhite;
+    color: dodgerblue;
+    font-weight: bold;    
+    opacity: 1;
+    box-shadow: #000 0 0 3px 1px;
+    border-radius: 25px;
+}
+div.button:hover
+{
+    transition-property: all;
+    transition-duration: .4s;
+    opacity: .8;
+}
+.fac
+{
+    padding: 10px;
+    position: relative;
+    top:220px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: dodgerblue;
+    color: ghostwhite;
+    font-family: Oswald,sans-serif;
+    padding-top: 5px;
+    text-align:center;
+    word-spacing:inherit;
+}
+.stu
+{
+    height: 700px;
+    position: relative;
+    top:400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: dodgerblue;
+    color: ghostwhite;
+    font-family: Oswald,sans-serif;
+    padding-top: 5px;
+    text-align:inherit;
+    word-spacing:normal;
+}
+img
+{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    
+ 
+    
+}
+
+#images
+{
+    text-align:center;
+    margin:50px auto; 
+    font-size: 20px;
+    font-family: oswald, sans-serif;
+    margin-left: 15px;
+    
+}
+#images a
+{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+article
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    position: relative;
+    top: 275px;
+}
+.ttt
+{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+}
+h2
+{
+    font-family: Oswald,sans-serif;
+}
+.ttt li
+{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+h4
+{
+    color: white;
+}

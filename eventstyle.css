@@ -1,0 +1,173 @@
+body
+{
+    background-color: #fff;
+}
+nav
+{
+    background-color: dodgerblue;
+    position: fixed;
+}
+.container
+{
+    text-align: center;
+}
+nav li
+{
+    text-shadow: none;
+    font-weight: 500;
+}
+table
+{
+    padding: 0;
+}
+td
+{
+    text-align: center;
+}
+th
+{
+    text-align: center;
+}
+td ul
+{
+    display: inline;
+}
+ul li
+{
+    list-style-type: none;
+}
+.srmlogo
+{
+    font-weight: normal;
+}
+.icons
+{
+    position: fixed;
+    display: inline-block;
+    top: 70px;
+    vertical-align: middle;
+    min-height: 70px;
+    z-index: 10000;
+    left: 0;
+    min-width: 100%;
+    background-color: lightgray;
+    padding: 0;
+    text-align: center;
+    border-bottom: solid 2px white;
+}
+h2
+{
+    font-size: 50px;
+    color: #000;
+    font-family: Oswald;
+}
+.icons li
+{
+    list-style-type: none;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    width: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    text-shadow: none;
+    font-family: Open Sans;
+}
+.sport img
+{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    top: -60px;
+}
+.extrosport a:link
+{
+    color: lightseagreen;
+}
+.extrosport a:visited
+{
+    color: lightseagreen;
+}
+.extrosport a:hover
+{
+    color: dodgerblue;
+}
+.extrosport a:active
+{
+    color: deeppink;
+}
+.extrosport li
+{
+    list-style-image: disc;
+}
+.extrosport
+{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding: 40px;
+    padding-top: 20px;
+    width: 500px;
+    border-left: solid 20px transparent;
+    font-size: 17px;
+}
+.introsport
+{
+    display: inline-block;
+}
+img.copic
+{
+    display: inline-block;
+    border-collapse: collapse;
+    padding: none;
+    height: 150px;
+    width: 150px;
+}
+div.sport
+{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    position: relative;
+    top: 140px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: Roboto;
+    padding: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 1024px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.mangycur
+{
+    font-weight: bold;
+}
+.triangleofgod
+{
+    display: none;
+    position:absolute;
+    bottom:0;
+    height:0;
+    width:0;
+    margin-left: 40px;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px white;
+}
+.icons li a
+{
+    color: black;
+    font-family: Open Sans;
+    text-decoration: none;
+}
+.icons li a:active
+{
+    font-weight: bold;
+}

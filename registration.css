@@ -1,0 +1,174 @@
+body
+{
+    background-color: ghostwhite;
+    /*background-image: url('bgeg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+nav
+{
+    background-color: dodgerblue;
+}
+nav li
+{
+    text-shadow: none;
+    font-weight: 500;
+}
+div#form
+{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+    max-height: 500px;
+    visibility: visible;
+    position: relative;
+    z-index: 600;
+    top: 200px;
+    text-align: center;
+}
+.thechoice
+{
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: solid 7.5px rgb(10,124,235);
+}
+.thechoice:hover
+{
+    transition: all .5s;
+    background-color: rgb(10,124,235);
+}
+.spacer
+{
+    display: inline-block;
+    width: 70px;
+    height: 100px;
+}
+.thechoice img
+{
+    width: 155px;
+    height: 165px;
+}
+#universitat
+{
+    background-color: ghostwhite;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    max-width: 1024px;
+    top: -160px;
+    z-index: 500;
+}
+#individual
+{
+    background-color: ghostwhite;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    max-width: 1024px;
+    top: -160px;
+    z-index: 400;
+}
+#form h1
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: #000 0 0 .5px;
+    color: dodgerblue;
+}
+#formtabz
+{
+    max-width: 960px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#icon
+{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-bottom: solid 7px transparent;
+    border-right: none;
+    border-top: solid 7px transparent;
+    border-left: solid 7px black;
+}
+form
+{
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+.button-ish
+{
+    display: block;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    float: right;
+    position: relative;
+    left: -40px;
+    background-color: dodgerblue;
+}
+td
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+caption
+{
+    font-size: 15px;
+}
+.acc
+{
+    position: relative;
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top: -20px;
+    max-width: 920px;
+    padding: 20px;
+    margin-left: auto;
+    background-color: #e5ecf9;
+    margin-right: auto;
+    font-family: serif;
+    font-family: sans-serif;
+}
+table#esporta td
+{
+    text-align: center justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+table#esporta
+{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+form input[type="text"],input[type="email"]
+{
+    padding: 10px;
+    width: 300px;
+}
+label.was
+{
+    font-size: 17px;
+}

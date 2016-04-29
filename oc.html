@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>Organizing Committee</title>
+ <div class="container">
+            <nav>
+                <li class="srmlogo">&nbsp;&nbsp;<img src="srmlogo.png" />&nbsp;&nbsp;SRM UNIVERSITY</li>
+                <li><a href="index.html">home</a></li>&nbsp;/&nbsp;
+                <li><a href="events.html">events</a></li>&nbsp;/&nbsp;
+                <li><a href="gallery.html">gallery</a></li>&nbsp;/&nbsp;
+                <li><a href="registration.html">register</a></li>
+            </nav>
+            <div class="carousel">
+                <img src="DSC_0001.jpg" />
+                <img src="DSC_0102.jpg" />
+                <img src="DSC_0079.JPG" />
+                <img src="DSC_0071.JPG" />
+            </div>
+     <link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="print.css" type="text/css" media="print"> 
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+        <!--[if lt IE 7]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+        <script type="text/javascript" src="smoothscroll.js"></script>
+    <link rel="stylesheet" href="index_style.css" />
+    <link rel="stylesheet" href="OC1.css" />
+     
+    
+            <a href="#js"><div class="button" type="submit" id="gotoreg">
+                    Faculty
+            </div></a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+            <a href="#seb"><div class="button" type="submit">Student   
+                        </div></a>
+    </div>
+    </head>
+<body onload = "goOrgAJAX()"> 
+    <div class="fac">
+     <p>
+        <h3> Convener</h3>
+        <h4> Dr.(Prof) VS Gupta</h4>
+        
+        <h3>Co-Convener</h3>
+        <h4>Mr.Rajesh Vashishta</h4>
+        <h4>Mr.Vinod Upadhyaya</h4>
+        <h4>Mr.Amrit Kumar</h4>
+        <h4>Mr.Ajay Kumar</h4>
+    
+        <h3>Creative Head</h3>
+        <h4>Mr. Arpit Varshney</h4>
+        </p>
+    </div>
+    <article id="js">
+        <h2>Faculty Coordinators</h2><br /><br />
+                <ul class="ttt colborder" id="nso">
+                    <h2>NSO Coordinators</h2><br>    
+                </ul>
+                <ul class="ttt colborder" id="reg">
+                    <h2>Registration</h2><br>  
+                </ul>
+                <ul class="ttt colborder" id="disc">
+                    <h2>Discipline</h2><br>  
+                </ul>
+                <ul class="ttt colborder" id="ocer">
+                    <h2>Opening Ceremony</h2><br>  
+                </ul>
+                <ul class="ttt" id="closer">
+                    <h2>Closing Ceremony</h2><br>  
+                </ul>
+            </article>
+        <script type="text/javascript">
+                function goOrgAJAX()
+            {
+                var xreq = new XMLHttpRequest();
+                xreq.onreadystatechange = function()
+                {
+                    if (xreq.readyState==4 && xreq.status==200)
+                    {
+                        x = xreq.responseXML.documentElement.getElementsByTagName("committee")[0].getElementsByTagName("person");
+                        for(i=0;i<x.length;i++)
+                        {
+                            xx = x[i].getElementsByTagName("name")[0].firstChild.nodeValue;
+                            document.getElementById("nso").innerHTML = document.getElementById("nso").innerHTML + "<li>" + xx;
+                        }
+                        x1 = xreq.responseXML.documentElement.getElementsByTagName("committee")[1].getElementsByTagName("person");
+                        for(i=0;i<x1.length;i++)
+                        {
+                            xx = x1[i].getElementsByTagName("name")[0].firstChild.nodeValue;
+                            document.getElementById("reg").innerHTML = document.getElementById("reg").innerHTML + "<li>" + xx;
+                        }
+                        x2 = xreq.responseXML.documentElement.getElementsByTagName("committee")[2].getElementsByTagName("person");
+                        for(i=0;i<x2.length;i++)
+                        {
+                            xx = x2[i].getElementsByTagName("name")[0].firstChild.nodeValue;
+                            document.getElementById("disc").innerHTML = document.getElementById("disc").innerHTML + "<li>" + xx;
+                        }
+                        x3 = xreq.responseXML.documentElement.getElementsByTagName("committee")[3].getElementsByTagName("person");
+                        for(i=0;i<x3.length;i++)
+                        {
+                            xx = x3[i].getElementsByTagName("name")[0].firstChild.nodeValue;
+                            document.getElementById("ocer").innerHTML = document.getElementById("ocer").innerHTML + "<li>" + xx;
+                        }
+                        x4 = xreq.responseXML.documentElement.getElementsByTagName("committee")[4].getElementsByTagName("person");
+                        for(i=0;i<x4.length;i++)
+                        {
+                            xx = x4[i].getElementsByTagName("name")[0].firstChild.nodeValue;
+                            document.getElementById("closer").innerHTML = document.getElementById("closer").innerHTML + "<li>" + xx;
+                        }                        
+                    }
+                }
+                xreq.open("GET","data_committee.xml",true);
+                xreq.send();
+            }
+            </script>
+    <div class="stu">
+     <p>
+ <center><h2 id="seb">Student Executive Board</h2></center>
+       <div id="images">
+    <a href="oc.jpg">
+        <img src="bpappu.jpg" width="100px" height="100px">
+        <div class="caption">Sannidhya Awasthi</div>
+    </a>
+    <a href="Anukriti.jpg">
+        <img src="Anukriti.jpg" width="100px" height="100px"> 
+        <div class="caption">Anukriti Gupta</div>
+    </a>
+             <a href="Aristotle.jpeg">
+        <img src="Aristotle.jpeg" width="100px" height="100px">
+        <div class="caption">Aristotle</div>
+    </a>
+    <a href="oc.jpg.jpg">
+        <img src="IMG_7505.jpg" width="100px" height="100px"> 
+        <div class="caption">Abhishek Singh</div>
+    </a>
+</div>
+           <br>
+           <div id="images">
+    <a href="Prasoon.jpg">
+        <img src="Prasoon.jpg" width="100px" height="100px">
+        <div class="caption">Prasoon Bajpai</div>
+    </a>
+    <a href="oc.jpg">
+        <img src="IMG_7317.jpg" width="100px" height="100px"> 
+        <div class="caption">Faisal Akram</div>
+    </a>
+             <a href="Srikrishna.jpg">
+        <img src="Srikrishna.jpg" width="100px" height="100px">
+        <div class="caption">Srikrishna Prasad</div>
+    </a>
+    <a href="Saurabh.JPG">
+        <img src="Saurabh.JPG" width="100px" height="100px"> 
+        <div class="caption">Saurabh Goyal</div>
+    </a>
+</div>
+    </div>
+    
+    </body>
+       
+  
+</html>

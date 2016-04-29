@@ -1,0 +1,32 @@
+h2
+{
+    text-align: center;
+    font-size: 30px
+}
+h3
+{
+    text-align: center;
+    font-family: Oswald,sans-serif;
+    font-size: 24px;
+img
+{
+    height: 170px;
+    width: 200px;
+    
+}
+#images
+{
+    text-align:center;
+    margin:50px auto; 
+    font-size: 20px;
+    font-family: oswald, sans-serif;
+    margin-left: 15px;
+    
+}
+#images a
+{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
